@@ -24,6 +24,7 @@ These are the assumptions:
 ---
 
 <img src="https://github.com/fadhilijuma/auto-irrigation-service/raw/main/drawio.png" >
+
 ---
 ## Schema Architecture
 We are making 2 major assumptions in the schema. We are assuming that a certain type of crop can be planted in many plots *one crop to many plots*.
@@ -33,6 +34,8 @@ We are also assuming that there could be many sensors in a plot of land as expla
 ---
 
 <img src="https://github.com/fadhilijuma/auto-irrigation-service/raw/main/schema.png" >
+
+
 ---
 
 ## Services Breakdown 
