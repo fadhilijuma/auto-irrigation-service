@@ -27,9 +27,11 @@ These are the assumptions:
 
 ---
 ## Schema Architecture
-We are making 2 major assumptions in the schema. We are assuming that a certain type of crop can be planted in many plots *one crop to many plots*.
+We are making 2 major assumptions in the schema. 
 
-We are also assuming that there could be many sensors in a plot of land as explained earlier. 
+- We are assuming that a certain type of crop can be planted in many plots *one crop to many plots*.
+
+- We are also assuming that there could be many sensors in a plot of land as explained earlier. 
 
 ---
 
