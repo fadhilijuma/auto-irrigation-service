@@ -1,6 +1,6 @@
 package com.banquemisr.plots.model.crop;
 
-import com.banquemisr.model.BaseEntity;
+import com.banquemisr.plots.model.BaseEntity;
 import lombok.*;
 import org.hibernate.annotations.Type;
 

@@ -36,11 +36,6 @@ public class PlotService {
     public Page<Plot> findAll(int page, int size) {
         return plotsRepository.findAll(PageRequest.of(page,size));
     }
-
-    public Optional<Plot> save(Long id) {
-        return plotsRepository.findById(id);
-    }
-
     public void addCrop(Long plotId, Long cropId) {
         Plot plot = plotsRepository.getReferenceById(plotId);
         Crop crop = cropsRepository.getReferenceById(cropId);
