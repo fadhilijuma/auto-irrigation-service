@@ -2,7 +2,7 @@
 
 ----
 
-Auto Irrigation Service is a service that integrates plots of land in Egypt to sensors spread out across the plots of land.
+Auto Irrigation Service is a service that integrates plots of land in Egypt to sensors spread out across the plots of land. I implemented an almost similar system based on MQTT and Apache Kafka receiving notifications events from POS terminals. I gave a talk about it at the London Kafka Summit. The solution is about using MQTT and Apache Kafka to run devices that run where internet is very minimal, which is the case with sensors. They mostly operate in fields where we have limited internet. https://www.confluent.io/resources/kafka-summit-2020/mqtt-and-apache-kafka-the-solution-to-poor-internet-connectivity-in-africa/
 
 
 ## Architecture
@@ -11,6 +11,11 @@ Apache Kafka is the central data plane which acts as the mediator af all communi
 that receives and wires message events and notifications from and to sensors across the land. 
 
 All messages from and to MQTT Broker are send to Apache Kafka. 
+
+
+## NB:
+- MQTT Cluster and Kafka Cluster has not been implemented. We only run a minimal Kafka instance in Kraft Mode on docker i.e. without Zookeeper and Postgres database. 
+- Sensors communication with MQTT has not been implemented.
 
 ----
 

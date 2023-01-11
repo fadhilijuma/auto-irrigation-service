@@ -9,11 +9,6 @@ services:
       - POSTGRES_DB=irrigation
     ports:
       - '5432:5432'
-  zipkin:
-    image: openzipkin/zipkin-slim
-    container_name: zipkin
-    ports:
-      - 9411:9411
   kafka:
     image: moeenz/docker-kafka-kraft:latest
     restart: always
